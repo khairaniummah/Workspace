@@ -1,23 +1,40 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-
-<xsl:template match="database">
-  <html>
-  <body>
-  <h2>database</h2>
-    <table border="1">
-      <tr bgcolor="#9acd32">
-        <th>ID Pegawai</th>
-        <th>Nama</th>
-      </tr>
-      <xsl:for-each select="row">
-      <tr>
-        <td><xsl:value-of select="ID"/></td>
-        <td><xsl:value-of select="NAME"/></td>
-      </tr>
-      </xsl:for-each>
-    </table>
-  </body>
-  </html>
-</xsl:template>
-</xsl:stylesheet>
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="datasql.xsl"?>
+<database>
+	<row>
+		<ID>1011</ID>
+		<NAME>Danang</NAME>
+	</row>
+	<row>
+		<ID>1012</ID>
+		<NAME>Divo</NAME>
+	</row>
+	<row>
+		<ID>1013</ID>
+		<NAME>Christian</NAME>
+	</row>
+	<row>
+		<ID>1021</ID>
+		<NAME>Ardian</NAME>
+	</row>
+	<row>
+		<ID>1022</ID>
+		<NAME>Mamad</NAME>
+	</row>
+	<row>
+		<ID>1023</ID>
+		<NAME>Jusi</NAME>
+	</row>
+	<row>
+		<ID>1031</ID>
+		<NAME>Parto</NAME>
+	</row>
+	<row>
+		<ID>1032</ID>
+		<NAME>Anthony</NAME>
+	</row>
+	<row>
+		<ID>1033</ID>
+		<NAME>Habib</NAME>
+	</row>
+</database>

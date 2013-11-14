@@ -25,6 +25,19 @@ class Converter{
 			}
 			$root->appendChild($temp);
 		}
+		//menambahkan tag xml stylesheet pada file output.xml
+		$insertBefore = $doc->firstChild;
+		foreach($doc->childNodes as $node)
+		{
+			if ($node->nodeType == XML_ELEMENT_NODE)
+			{
+				$insertBefore = $node;
+				break;
+			}
+		}
+		$pi = $doc->createProcessingInstruction('xml-stylesheet', 'type="text/xsl" href="output.xsl"');
+		$doc->insertBefore($pi, $insertBefore);
+		
 		$strxml = $doc->saveXML();
 		$handle = fopen($outputFile, "w");
 		fwrite($handle, $strxml);

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="Menu.xsl"?> 
+<Menu>
+	<Nasi>
+		<kode>01</kode>
+		<nama>Nasi Putih</nama>
+	</Nasi>
+	<Nasi>
+		<kode>02</kode>
+		<nama>Nasi Uduk</nama>
+	</Nasi>
+	<Nasi>
+		<kode>03</kode>
+		<nama>Nasi Kuning</nama>
+	</Nasi>
+	<Nasi>
+		<kode>04</kode>
+		<nama>Nasi Liwet</nama>
+	</Nasi>
+	<Nasi>
+		<kode>05</kode>
+		<nama>Nasi Goreng</nama>
+	</Nasi>
+	<Nasi>
+		<kode>06</kode>
+		<nama>Nasi Timbel</nama>
+	</Nasi>
+	<Nasi>
+		<kode>07</kode>
+		<nama>Nasi Tutug</nama>
+	</Nasi>
+	<Nasi>
+		<kode>08</kode>
+		<nama>Nasi Kucing</nama>
+	</Nasi>
+</Menu>
+
+	
+

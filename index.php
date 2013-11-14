@@ -5,15 +5,28 @@ $proc = new XsltProcessor;
 $t = new Converter;
 if ($_GET["search"] == 'dataxml'){ //perintah: http://localhost/get.php?search=dataxml
 	$inputFile = 'Menu.xml';
-	$xml = file_get_contents($inputFile);
-	print $xml;
-	
+	$doc = new DOMDocument();
+	$doc->load('Menu.xsl');
+	$proc->importStylesheet($doc);
+	//$xml = file_get_contents($inputFile);
+	$doc2 = new DOMDocument();
+	$doc2->load($inputFile);
+	echo $proc->transformToXML($doc2);
+	//$xml = file_get_contents($inputFile);
+
 }
 else if ($_GET["search"] == 'datacsv'){ //perintah: http://localhost/get.php?search=datacsv
 	$convert = $t->csvConverter();
 	$inputFile = 'output.xml';
-	$xml = file_get_contents($inputFile);
-	echo $xml;
+	//$xml = file_get_contents($inputFile);
+	//echo $xml;
+	$doc = new DOMDocument();
+	$doc->load('output.xsl');
+	$proc->importStylesheet($doc);
+	//$xml = file_get_contents($inputFile);
+	$doc2 = new DOMDocument();
+	$doc2->load($inputFile);
+	echo $proc->transformToXML($doc2);
 }
 
 else if ($_GET["search"] == 'datasql'){ //perintah: http://localhost/get.php?search=datasql
