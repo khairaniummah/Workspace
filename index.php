@@ -1,6 +1,11 @@
 <?php 
+
+//Dinda Tisi Calista - 18211003
+//Khairani Ummah - 18211050
+
 require_once('./Converter.php');
 $proc = new XsltProcessor;
+
 
 $t = new Converter;
 if ($_GET["search"] == 'dataxml'){ //perintah: http://localhost/get.php?search=dataxml

@@ -1,4 +1,6 @@
 <?php
+//Dinda Tisi Calista - 18211003
+//Khairani Ummah - 18211050
 class Converter{
 	function csvConverter(){
 		$inputFile   = 'coba.csv';
