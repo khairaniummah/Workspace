@@ -1,6 +1,7 @@
 <?php
-//Dinda Tisi Calista - 18211003
-//Khairani Ummah - 18211050
+error_reporting(E_ALL | E_STRICT);
+ini_set('display_errors', true);
+ini_set('auto_detect_line_endings', true);
 class Converter{
 	function csvConverter(){
 		$inputFile   = 'coba.csv';
